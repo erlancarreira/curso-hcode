@@ -84,70 +84,32 @@
         		</div>		
         	</div>
            
-            <div id="mais-buscados">
-            	
-            	<div class="row text-center title-default-roxo">
-            		<h2>Os mais buscados</h2>
-            		<div class="hr"></div>
-            	</div>
+            <div id="mais-buscados" class="container">
+        
+                <div class="row text-center title-default-roxo">
+                    <h2>os mais buscados</h2>
+                    <div class="hr"></div>    
+                </div>
 
-            	<div class="row">
-            		<div class="col-md-3" ng-repeat="produto in buscados">
-            			<div class="box-produto-info">
-	            			<a href="produto-{{produto.id_prod}}">
-	            			    <img src="assets/img/produtos/{{produto.foto_principal}}" alt="{{produto.nome_prod_longo}}" class="produto-img">
-	            			    <h3>{{produto.nome_prod_longo}}</h3>
-	            			    <div class="estrelas" data-score="{{produto.media}}"></div>
-	            			    <div class="text-qtd-reviews text-arial-cinza">({{produto.total_reviews}})</div>
-	            			    <div class="text-valor text-roxo">R$ {{produto.total}}</div>
-	            			    <div class="text-parcelado text-arial-cinza">{{produto.parcelas}}x de R$ {{produto.parcela}} sem juros</div>
-            			    </a>
-            			</div>
-            		</div>
+                <div class="row">
+                    
+                    <div class="col-md-3" ng-repeat="produto in buscados">
+                        <div class="box-produto-info">
+                            <a href="produto-{{produto.id_prod}}">
+                                <img src="assets/img/produtos/{{produto.foto_principal}}" alt="{{produto.nome_prod_longo}}" class="produto-img">
+                                <h3>{{produto.nome_prod_longo}}</h3>
+                                <div class="estrelas" data-score="{{produto.media}}"></div>
+                                <div class="text-qtd-reviews text-arial-cinza">({{produto.total_reviews}})</div>
+                                <div class="text-valor text-roxo">R$ {{produto.total}}</div>
+                                <div class="text-parcelado text-arial-cinza">{{produto.parcelas}}x de R$ {{produto.parcela}} sem juros</div>
+                            </a>
+                        </div>
 
-            		<div class="col-md-3">
-            			<div class="box-produto-info">
-	            			<a href="#">
-	            			    <img src="assets/img/produtos/panelas.png" alt="Panelas" class="produto-img">
-	            			    <h3>Conjunto de Panelas Tramontina Versalhes Alumínio Antiaderente 5</h3>
-	            			    <div class="estrelas" data-score="4"></div>
-	            			    <div class="text-qtd-reviews text-arial-cinza">(300)</div>
-	            			    <div class="text-valor text-roxo">R$ 109,90</div>
-	            			    <div class="text-parcelado text-arial-cinza">10x de R$ 10,99 sem juros</div>
-            			    </a>
-            			</div>
-            		</div>
+                    </div>
 
-            		<div class="col-md-3">
-            			<div class="box-produto-info">
-	            			<a href="#">
-	            			    <img src="assets/img/produtos/panelas.png" alt="Panelas" class="produto-img">
-	            			    <h3>Conjunto de Panelas Tramontina Versalhes Alumínio Antiaderente 5</h3>
-	            			    <div class="estrelas" data-score="2.5"></div>
-	            			    <div class="text-qtd-reviews text-arial-cinza">(300)</div>
-	            			    <div class="text-valor text-roxo">R$ 109,90</div>
-	            			    <div class="text-parcelado text-arial-cinza">10x de R$ 10,99 sem juros</div>
-            			    </a>
-            			</div>
-            		</div>
+                </div>
 
-            		<div class="col-md-3">
-            			<div class="box-produto-info">
-	            			<a href="#">
-	            			    <img src="assets/img/produtos/panelas.png" alt="Panelas" class="produto-img">
-	            			    <h3>Conjunto de Panelas Tramontina Versalhes Alumínio Antiaderente 5</h3>
-	            			    <div class="estrelas" data-score="5"></div>
-	            			    <div class="text-qtd-reviews text-arial-cinza">(300)</div>
-	            			    <div class="text-valor text-roxo">R$ 109,90</div>
-	            			    <div class="text-parcelado text-arial-cinza">10x de R$ 10,99 sem juros</div>
-            			    </a>
-            			</div>
-            		</div>
-            	</div>
-
-            </div>   
-
-        </div>
+            </div>
    
     </section>
 
